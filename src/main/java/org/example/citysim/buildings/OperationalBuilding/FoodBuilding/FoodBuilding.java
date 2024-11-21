@@ -1,6 +1,6 @@
-package org.example.citysim.utils.OperationalBuilding.FoodBuilding;
+package org.example.citysim.buildings.OperationalBuilding.FoodBuilding;
 
-import org.example.citysim.utils.OperationalBuilding.OperationalBuilding;
+import org.example.citysim.buildings.OperationalBuilding.OperationalBuilding;
 
 /**
  * Abstract class for Food buildings

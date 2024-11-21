@@ -1,4 +1,4 @@
-package org.example.citysim.utils.OperationalBuilding.currencybuilding;
+package org.example.citysim.buildings.OperationalBuilding.currencybuilding;
 /**
  * class Port, a building which produces Currency
  */

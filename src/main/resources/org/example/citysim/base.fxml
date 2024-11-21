@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.Pane?>
+
+<StackPane fx:controller="org.example.citysim.layout.BaseController"
+           xmlns:fx="http://javafx.com/fxml">
+
+<!--   Background grid pane -->
+    <Pane fx:id="backgroundGrid">
+        <Group>
+            <Canvas fx:id="canvas" width="800" height="800"/>
+        </Group>
+    </Pane>
+
+<!--   Main pane where buildings should go -->
+    <Pane fx:id="mainPane">
+        <Group>
+            <Canvas fx:id="mainCanvas" width="800" height="800"/>
+        </Group>
+    </Pane>
+
+</StackPane>

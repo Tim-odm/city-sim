@@ -1,4 +1,4 @@
-package org.example.citysim.utils.OperationalBuilding.satisfactionbuilding;
+package org.example.citysim.buildings.OperationalBuilding.satisfactionbuilding;
 /**
  * class PlaceOfHealing, a building which raises the satisfaction
  */

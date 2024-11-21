@@ -1,6 +1,6 @@
-package org.example.citysim.utils.OperationalBuilding.currencybuilding;
+package org.example.citysim.buildings.OperationalBuilding.currencybuilding;
 
-import org.example.citysim.utils.OperationalBuilding.OperationalBuilding;
+import org.example.citysim.buildings.OperationalBuilding.OperationalBuilding;
 /**
  * Abstract class for Currency buildings
  * has a currencyProdRate
