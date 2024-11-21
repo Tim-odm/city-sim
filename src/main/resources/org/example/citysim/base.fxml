@@ -4,22 +4,57 @@
 <?import javafx.scene.canvas.Canvas?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
 
-<StackPane fx:controller="org.example.citysim.layout.BaseController"
-           xmlns:fx="http://javafx.com/fxml">
+<BorderPane fx:controller="org.example.citysim.layout.BaseController"
+            xmlns:fx="http://javafx.com/fxml">
+    <!-- Top pane currently empty -->
+    <top>
 
-<!--   Background grid pane -->
-    <Pane fx:id="backgroundGrid">
-        <Group>
-            <Canvas fx:id="canvas" width="800" height="800"/>
-        </Group>
-    </Pane>
+    </top>
 
-<!--   Main pane where buildings should go -->
-    <Pane fx:id="mainPane">
-        <Group>
-            <Canvas fx:id="mainCanvas" width="800" height="800"/>
-        </Group>
-    </Pane>
+    <!-- Stack pane in the center to hold the background grid and the main pane -->
+    <center>
+        <StackPane prefWidth="800" prefHeight="800">
+            <!-- Background grid pane -->
+            <Pane fx:id="backgroundGrid">
+                <Group>
+                    <Canvas fx:id="canvas" width="800" height="800"/>
+                </Group>
+            </Pane>
 
-</StackPane>
+            <!-- Main pane where buildings should go -->
+            <Pane fx:id="mainPane">
+                <Group>
+                    <Canvas fx:id="mainCanvas" width="800" height="800"/>
+                </Group>
+            </Pane>
+
+            <!-- HBox to hold resource production information -->
+            <HBox>
+               <Label text="Resources: "/>
+            </HBox>
+        </StackPane>
+    </center>
+
+    <!-- VBox on the right to hold the building buttons -->
+    <!-- Consider changing to GridPane in future? -->
+    <right>
+        <VBox prefWidth="200" alignment="CENTER">
+            <Label text="Buildings"/>
+        </VBox>
+    </right>
+
+    <!-- Create a pane on the left -->
+    <left>
+        <Pane prefWidth="200" prefHeight="800">
+            <VBox alignment="CENTER" prefWidth="200" prefHeight="800">
+                <Label text ="Left side pane" />
+            </VBox>
+        </Pane>
+    </left>
+
+</BorderPane>
