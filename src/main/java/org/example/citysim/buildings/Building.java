@@ -1,4 +1,4 @@
-package org.example.citysim.utils;
+package org.example.citysim.buildings;
 
 public abstract class Building {
     /**
