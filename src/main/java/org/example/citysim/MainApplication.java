@@ -4,6 +4,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import org.example.citysim.game.Game;
 
 import java.io.IOException;
 
@@ -13,6 +14,8 @@ public class MainApplication extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("base" +
                 ".fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 1200, 800);
+        Game game = new Game();
+        game.init();
         stage.setTitle("City Simulator");
         stage.setScene(scene);
         stage.show();
