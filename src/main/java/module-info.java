@@ -10,4 +10,6 @@ module org.example.citysim {
 
     opens org.example.citysim to javafx.fxml;
     exports org.example.citysim;
+    exports org.example.citysim.layout;
+    opens org.example.citysim.layout to javafx.fxml;
 }

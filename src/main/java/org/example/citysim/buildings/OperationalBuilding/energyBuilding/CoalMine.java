@@ -1,4 +1,4 @@
-package org.example.citysim.energyBuilding;
+package org.example.citysim.buildings.OperationalBuilding.energyBuilding;
 
 public class CoalMine {
     /**

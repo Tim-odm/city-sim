@@ -1,4 +1,4 @@
-package org.example.citysim.utils.residentialbuildings;
+package org.example.citysim.buildings.residentialBuilding;
 
 public class House extends ResidentialBuilding {
     public  House() {

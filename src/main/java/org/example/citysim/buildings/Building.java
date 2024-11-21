@@ -1,6 +1,8 @@
-package org.example.citysim.utils;
+package org.example.citysim.buildings;
 
-public abstract class Building {
+import javafx.scene.control.Label;
+
+public abstract class Building extends Label {
     /**
      * The cost to build the building
      */
@@ -17,6 +19,16 @@ public abstract class Building {
      * Whether the building is connected to the road network
      */
     protected boolean isConnected;
+
+    /**
+     * X Position of the building
+     */
+    protected double xPos;
+
+    /**
+     * Y Position of the building
+     */
+    protected double yPos;
 
     /**
      * Get the cost to build the building

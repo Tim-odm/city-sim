@@ -1,6 +1,6 @@
-package org.example.citysim.utils.residentialbuildings;
+package org.example.citysim.buildings.residentialBuilding;
 
-import org.example.citysim.utils.Building;
+import org.example.citysim.buildings.Building;
 
 /**
  * Abstract class representing habitable buildings.

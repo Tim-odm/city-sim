@@ -1,6 +1,6 @@
-package org.example.citysim.utils.OperationalBuilding.satisfactionbuilding;
+package org.example.citysim.buildings.OperationalBuilding.satisfactionbuilding;
 
-import org.example.citysim.utils.OperationalBuilding.OperationalBuilding;
+import org.example.citysim.buildings.OperationalBuilding.OperationalBuilding;
 
 /**
  * Abstract class for buildings which increase satisfaction
