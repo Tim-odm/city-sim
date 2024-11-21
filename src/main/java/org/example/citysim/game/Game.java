@@ -5,7 +5,6 @@ import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.util.Duration;
-import kotlin.jvm.internal.SourceDebugExtension;
 import org.example.citysim.buildings.Building;
 import org.example.citysim.buildings.OperationalBuilding.FoodBuilding.Farm;
 import org.example.citysim.buildings.OperationalBuilding.currencybuilding.Shop;
@@ -37,6 +36,9 @@ public class Game {
         initTimeline();
     }
 
+    /**
+     * Initialize the base buildings in the game.
+     */
     private void initBaseBuildings() {
         Farm farm = new Farm(0, 0, true,
                 0, 2, 0, 2, 100);
@@ -51,6 +53,7 @@ public class Game {
     /**
      * Initialize the timeline. 1 day = 10 minutes (600sec). 1 hour = 25sec.
      * Update resources every 25sec. Duration set to 5 for testing purposes.
+     * Animation tick rate set to 1sec/5 for testing purposes.
      */
     private void initTimeline() {
         // Update resources every 25 seconds
