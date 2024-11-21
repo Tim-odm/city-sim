@@ -1,4 +1,4 @@
-package org.example.citysim.utils.OperationalBuilding.FoodBuilding;
+package org.example.citysim.buildings.OperationalBuilding.FoodBuilding;
 
 /**
  * class Farm, a building which produces Food

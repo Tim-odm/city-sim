@@ -1,6 +1,6 @@
-package org.example.citysim.utils.OperationalBuilding;
+package org.example.citysim.buildings.OperationalBuilding;
 
-import org.example.citysim.utils.Building;
+import org.example.citysim.buildings.Building;
 
 /**
  * Abstract class for Operational Buildings

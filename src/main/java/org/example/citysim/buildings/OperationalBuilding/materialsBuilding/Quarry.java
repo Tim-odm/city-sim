@@ -1,4 +1,4 @@
-package org.example.citysim.materialsBuilding;
+package org.example.citysim.buildings.OperationalBuilding.materialsBuilding;
 
 public class Quarry extends MaterialsBuilding {
     /**
