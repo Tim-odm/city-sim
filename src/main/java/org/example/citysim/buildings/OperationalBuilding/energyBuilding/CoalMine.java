@@ -1,6 +1,6 @@
 package org.example.citysim.buildings.OperationalBuilding.energyBuilding;
 
-public class CoalMine {
+public class CoalMine extends EnergyBuilding {
     /**
      * The rate at which the building produces coal
      */
