@@ -36,6 +36,10 @@ public class Game {
         initTimeline();
     }
 
+    public ResourceManager getResourceManager() {
+        return resourceManager;
+    }
+
     /**
      * Initialize the base buildings in the game.
      */
