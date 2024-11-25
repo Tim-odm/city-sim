@@ -9,6 +9,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.HBox?>
 
+<?import javafx.scene.text.Text?>
 <BorderPane fx:controller="org.example.citysim.layout.BaseController"
             xmlns:fx="http://javafx.com/fxml">
     <!-- Top pane currently empty -->
@@ -18,7 +19,7 @@
 
     <!-- Stack pane in the center to hold the background grid and the main pane -->
     <center>
-        <StackPane prefWidth="800" prefHeight="800">
+        <StackPane>
             <!-- Background grid pane -->
             <Pane fx:id="backgroundGrid">
                 <Group>
@@ -30,12 +31,14 @@
             <Pane fx:id="mainPane">
                 <Group>
                     <Canvas fx:id="mainCanvas" width="800" height="800"/>
+
                 </Group>
             </Pane>
 
             <!-- HBox to hold resource production information -->
             <HBox>
-               <Label text="Resources: "/>
+                <Label text="Resources: "/>
+                <Label fx:id="resources" text="Currency: 0.0 Food: 0.0 Energy: 0.0" />
             </HBox>
         </StackPane>
     </center>
@@ -43,7 +46,7 @@
     <!-- VBox on the right to hold the building buttons -->
     <!-- Consider changing to GridPane in future? -->
     <right>
-        <VBox prefWidth="200" alignment="CENTER">
+        <VBox prefWidth="200" alignment="CENTER" prefHeight="800">
             <Label text="Buildings"/>
         </VBox>
     </right>

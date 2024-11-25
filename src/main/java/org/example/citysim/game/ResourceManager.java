@@ -52,4 +52,13 @@ public class ResourceManager {
         currencyAmount += shop.getCurrencyProdRate();
         System.out.println("Currency: " + currencyAmount + " Food: " + foodAmount + " Energy: " + energyAmount);
     }
+    public double getCurrencyAmount() {
+        return currencyAmount;
+    }
+    public double getFoodAmount() {
+        return foodAmount;
+    }
+    public double getEnergyAmount() {
+        return energyAmount;
+    }
 }
